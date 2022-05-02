@@ -5,9 +5,44 @@
     padding: 0;
   }
 
+/* header */
+header {
+    color: #29b1dd;
+    font-size: 1.5rem;
+    padding: .5rem;
+}
 
+nav {
+    background-color: #29b1dd;
+    height: 80px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+
+/* MAIN */
 .grid-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.icon-card {
+    width: calc(100% / 5 - 3rem);
+    text-align: center;
+    box-shadow: 1px 1px 2px #7e7e7e;
+    border-radius: 20px;
+    margin: 1rem;
+}
+.icon-card h6 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 3rem;
 }

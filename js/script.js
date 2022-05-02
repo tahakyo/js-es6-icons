@@ -118,7 +118,8 @@ const animalIcons = [
 // Milestone 1
 // Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
 
-
+// Milestone 2
+// Ciascuna icona ha una proprietà "color": utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
 
 
 // l ordine dell'output per in nome della classe icon
@@ -134,10 +135,9 @@ animalIcons.forEach((element) => {
     gridContainer.innerHTML += `
         <div class="icon-card">
             <i class="${element.family} ${element.prefix}${element.name}" style = "color: ${element.color}"></i>
-            <h6>Cat</h6>
+            <h6>${element.name}</h6>
         </div> `
 }); 
 
 
-// Milestone 2
-// Ciascuna icona ha una proprietà "color": utilizzare questa proprietà per visualizzare le icone del colore corrispondente.
+
