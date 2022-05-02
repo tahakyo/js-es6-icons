@@ -112,6 +112,19 @@ const animalIcons = [
 		color: 'blue'
 	}
 ];
+// l ordine dell'output per in nome della classe icon
+// family/prefix/name
 
-const gridContainer = document.getElementById('grid-container');
+const gridContainer = document.querySelector('.grid-container');
 
+animalIcons.forEach((element) => {
+    // test:
+    // console.log(`
+    //     ${element.family} ${element.prefix} ${element.name}
+    // `);
+    gridContainer.innerHTML += `
+        <div class="icon-card">
+            <i class="${element.family} ${element.prefix}${element.name}"></i>
+            <h6>Cat</h6>
+        </div> `
+}) 
